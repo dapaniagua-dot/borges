@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Escuela Integral Jorge Luis Borges — Institución educativa privada en Buenos Aires con niveles Inicial, Primaria y Secundaria. Formación integral, valores y excelencia académica.">
+  <meta name="keywords" content="escuela privada Buenos Aires, colegio integral, educación inicial, primaria, secundaria, admisiones, Jorge Luis Borges">
+  <title>Escuela Integral Jorge Luis Borges — Inicial · Primaria · Secundaria</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- NAVIGATION                                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <img src="LOGO.png" alt="Escuela Integral Jorge Luis Borges" class="nav__logo-icon">
+        <span class="nav__logo-text">
+          <span class="nav__logo-name">Jorge Luis Borges</span>
+          <span class="nav__logo-sub">Escuela Integral</span>
+        </span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#niveles">Niveles</a></li>
+        <li><a href="#instalaciones">Instalaciones</a></li>
+        <li><a href="#ideario">Ideario</a></li>
+        <li><a href="#admisiones" class="nav__cta">Admisiones</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HERO                                        -->
+  <!-- ═══════════════════════════════════════════ -->
+  <header class="hero" id="hero">
+    <div class="hero__bg-pattern"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Institución Educativa desde el año 1996</p>
+      <h1 class="hero__title reveal reveal--delay-1">
+        Donde cada alumno<br>
+        <em>escribe su propia historia</em>
+      </h1>
+      <p class="hero__subtitle reveal reveal--delay-2">
+        Formación integral en tres niveles educativos — Inicial, Primaria y Secundaria —
+        con un proyecto pedagógico que cultiva el pensamiento crítico, la creatividad y los valores.
+      </p>
+      <div class="hero__actions reveal reveal--delay-3">
+        <a href="#admisiones" class="btn btn--primary">Iniciar Admisión 2027</a>
+        <a href="#niveles" class="btn btn--ghost">Conocer Niveles</a>
+      </div>
+
+      <div class="hero__stats reveal reveal--delay-4">
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="30">0</span>
+          <span class="hero__stat-label">Años de trayectoria</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="3">0</span>
+          <span class="hero__stat-label">Niveles educativos</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" data-count="850">0</span>
+          <span class="hero__stat-label">Familias nos eligen</span>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- NIVELES EDUCATIVOS                          -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="niveles" id="niveles">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__tag">Propuesta Educativa</span>
+        <h2 class="section-header__title">Tres niveles,<br><em>un mismo compromiso</em></h2>
+        <p class="section-header__desc">Acompañamos a cada alumno desde sus primeros pasos hasta la preparación para la vida universitaria, con un proyecto pedagógico coherente y articulado.</p>
+      </div>
+
+      <div class="niveles__grid">
+        <!-- INICIAL -->
+        <article class="nivel-card reveal" data-nivel="inicial">
+          <div class="nivel-card__icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="35" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <circle cx="40" cy="30" r="8" stroke="currentColor" stroke-width="2"/>
+              <path d="M25 55c0-8.284 6.716-15 15-15s15 6.716 15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="28" cy="22" r="4" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="52" cy="22" r="4" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <div class="nivel-card__ages">2 a 5 años</div>
+          <h3 class="nivel-card__title">Nivel Inicial</h3>
+          <p class="nivel-card__desc">
+            El juego como motor del aprendizaje. Estimulación temprana, desarrollo emocional y socialización en un ambiente cálido y seguro.
+          </p>
+          <ul class="nivel-card__features">
+            <li>Salas desde los 2 años</li>
+            <li>Jornada simple y extendida</li>
+            <li>Inglés desde sala de 3</li>
+            <li>Talleres de expresión artística</li>
+            <li>Huerta y naturaleza</li>
+          </ul>
+          <a href="#" class="nivel-card__link" data-modal="modalInicial">
+            Conocé más sobre Inicial
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </article>
+
+        <!-- PRIMARIA -->
+        <article class="nivel-card reveal reveal--delay-1" data-nivel="primaria">
+          <div class="nivel-card__icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="35" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <rect x="25" y="20" width="30" height="40" rx="2" stroke="currentColor" stroke-width="2"/>
+              <line x1="30" y1="30" x2="50" y2="30" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <line x1="30" y1="36" x2="50" y2="36" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <line x1="30" y1="42" x2="42" y2="42" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <path d="M33 52l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="nivel-card__ages">6 a 12 años</div>
+          <h3 class="nivel-card__title">Nivel Primario</h3>
+          <p class="nivel-card__desc">
+            Bases sólidas en lengua, matemáticas y ciencias. Pensamiento lógico, formación en valores y hábitos de estudio para toda la vida.
+          </p>
+          <ul class="nivel-card__features">
+            <li>Doble escolaridad optativa</li>
+            <li>Programa bilingüe intensivo</li>
+            <li>Robótica y programación</li>
+            <li>Deportes y vida al aire libre</li>
+            <li>Proyecto de lectura Borges</li>
+          </ul>
+          <a href="#admisiones" class="nivel-card__link">
+            Conocé más sobre Primaria
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </article>
+
+        <!-- SECUNDARIA -->
+        <article class="nivel-card reveal reveal--delay-2" data-nivel="secundaria">
+          <div class="nivel-card__icon">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="35" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <path d="M20 45l20-15 20 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="30" y="45" width="20" height="15" stroke="currentColor" stroke-width="2"/>
+              <rect x="37" y="50" width="6" height="10" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M40 20v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="40" cy="18" r="2" fill="currentColor" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="nivel-card__ages">13 a 18 años</div>
+          <h3 class="nivel-card__title">Nivel Secundario</h3>
+          <p class="nivel-card__desc">
+            Preparación para la vida universitaria y profesional. Pensamiento crítico, orientación vocacional y formación ciudadana responsable.
+          </p>
+          <ul class="nivel-card__features">
+            <li>Ciencias Sociales y Humanidades</li>
+            <li>Exámenes internacionales</li>
+            <li>Modelo de Naciones Unidas</li>
+            <li>Viajes educativos e intercambio</li>
+            <li>Tutoría y orientación vocacional</li>
+          </ul>
+          <a href="#admisiones" class="nivel-card__link">
+            Conocé más sobre Secundaria
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FRASE / QUOTE                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="quote-section">
+    <div class="quote-section__pattern"></div>
+    <div class="container">
+      <blockquote class="quote reveal">
+        <p class="quote__text"><span class="quote__mark">&ldquo;</span>Uno no es lo que es por lo que escribe, sino por lo que ha leído.<span class="quote__mark">&rdquo;</span></p>
+        <cite class="quote__author">— Jorge Luis Borges</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- INSTALACIONES                               -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="instalaciones" id="instalaciones">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__tag">Nuestros Espacios</span>
+        <h2 class="section-header__title">Instalaciones que<br><em>inspiran el aprendizaje</em></h2>
+        <p class="section-header__desc">Espacios diseñados para estimular la creatividad, el movimiento y la concentración. Cada rincón de nuestra escuela está pensado para el bienestar de los alumnos.</p>
+      </div>
+
+      <div class="instalaciones__grid">
+        <div class="instalacion-card reveal" data-area="aulas">
+          <div class="instalacion-card__image">
+            <div class="instalacion-card__placeholder">
+              <svg viewBox="0 0 100 100" fill="none">
+                <rect x="15" y="25" width="70" height="50" rx="3" stroke="currentColor" stroke-width="2"/>
+                <rect x="20" y="30" width="25" height="18" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                <rect x="50" y="30" width="30" height="40" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                <line x1="25" y1="58" x2="40" y2="58" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                <line x1="25" y1="63" x2="35" y2="63" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+              </svg>
+              <span>Aulas Equipadas</span>
+            </div>
+          </div>
+          <div class="instalacion-card__info">
+            <h3>Aulas Modernas</h3>
+            <p>Equipadas con tecnología interactiva, iluminación natural y mobiliario ergonómico para cada edad.</p>
+          </div>
+        </div>
+
+        <div class="instalacion-card reveal reveal--delay-1" data-area="biblioteca">
+          <div class="instalacion-card__image">
+            <div class="instalacion-card__placeholder">
+              <svg viewBox="0 0 100 100" fill="none">
+                <rect x="20" y="25" width="8" height="50" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="30" y="20" width="8" height="55" rx="1" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
+                <rect x="40" y="28" width="8" height="47" rx="1" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                <rect x="50" y="22" width="8" height="53" rx="1" stroke="currentColor" stroke-width="1.5" opacity="0.7"/>
+                <rect x="60" y="30" width="8" height="45" rx="1" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                <rect x="70" y="25" width="8" height="50" rx="1" stroke="currentColor" stroke-width="1.5" opacity="0.9"/>
+              </svg>
+              <span>Biblioteca</span>
+            </div>
+          </div>
+          <div class="instalacion-card__info">
+            <h3>Biblioteca Borges</h3>
+            <p>Más de 5.000 volúmenes, sala de lectura silenciosa y espacio multimedia para investigación.</p>
+          </div>
+        </div>
+
+        <div class="instalacion-card reveal reveal--delay-2" data-area="deportes">
+          <div class="instalacion-card__image">
+            <img src="campodeportes.png" alt="Campo de Deportes" class="instalacion-card__photo">
+            <div class="instalacion-card__overlay">
+              <svg viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="25" stroke="currentColor" stroke-width="2"/>
+                <ellipse cx="50" cy="50" rx="25" ry="10" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                <ellipse cx="50" cy="50" rx="10" ry="25" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              </svg>
+              <span>Campo de Deportes</span>
+            </div>
+          </div>
+          <div class="instalacion-card__info">
+            <h3>Campo de Deportes</h3>
+            <p>Cancha de fútbol, básquet, vóley y atletismo. Natatorio climatizado y gimnasio cubierto.</p>
+          </div>
+        </div>
+
+        <div class="instalacion-card reveal" data-area="laboratorio">
+          <div class="instalacion-card__image">
+            <img src="laboratorioinformatica.jpg" alt="Laboratorio de Informática" class="instalacion-card__photo">
+            <div class="instalacion-card__overlay">
+              <svg viewBox="0 0 100 100" fill="none">
+                <path d="M35 25v25l-15 25h60L65 50V25" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <line x1="35" y1="25" x2="65" y2="25" stroke="currentColor" stroke-width="2"/>
+                <circle cx="45" cy="60" r="3" fill="currentColor" opacity="0.4"/>
+                <circle cx="55" cy="55" r="2" fill="currentColor" opacity="0.3"/>
+              </svg>
+              <span>Laboratorio</span>
+            </div>
+          </div>
+          <div class="instalacion-card__info">
+            <h3>Laboratorios</h3>
+            <p>Laboratorios de ciencias, informática y robótica con equipamiento de última generación.</p>
+          </div>
+        </div>
+
+        <div class="instalacion-card reveal reveal--delay-1" data-area="arte">
+          <div class="instalacion-card__image">
+            <img src="tallerdearte.png" alt="Muestra artística - Taller de Arte" class="instalacion-card__photo">
+            <div class="instalacion-card__overlay">
+              <svg viewBox="0 0 100 100" fill="none">
+                <circle cx="40" cy="40" r="15" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                <circle cx="55" cy="35" r="12" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                <circle cx="48" cy="55" r="13" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              </svg>
+              <span>Taller de Arte</span>
+            </div>
+          </div>
+          <div class="instalacion-card__info">
+            <h3>Taller de Arte</h3>
+            <p>Espacio amplio y luminoso para expresión plástica, música, teatro y danza.</p>
+          </div>
+        </div>
+
+        <div class="instalacion-card reveal reveal--delay-2" data-area="patio">
+          <div class="instalacion-card__image">
+            <div class="instalacion-card__placeholder">
+              <svg viewBox="0 0 100 100" fill="none">
+                <path d="M50 20c-12 0-20 10-20 22s20 33 20 33 20-21 20-33-8-22-20-22z" stroke="currentColor" stroke-width="2"/>
+                <circle cx="50" cy="40" r="8" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                <line x1="20" y1="80" x2="80" y2="80" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+                <line x1="25" y1="85" x2="75" y2="85" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+              </svg>
+              <span>Espacios Verdes</span>
+            </div>
+          </div>
+          <div class="instalacion-card__info">
+            <h3>Espacios Verdes</h3>
+            <p>Patios arbolados, huerta orgánica educativa y áreas de juego diseñadas por nivel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- IDEARIO Y VALORES                           -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="ideario" id="ideario">
+    <div class="ideario__bg-pattern"></div>
+    <div class="container">
+      <div class="section-header section-header--light reveal">
+        <span class="section-header__tag">Nuestra Filosofía</span>
+        <h2 class="section-header__title">Ideario y<br><em>valores fundacionales</em></h2>
+        <p class="section-header__desc">Creemos en una educación que forma personas íntegras, capaces de pensar con autonomía, actuar con empatía y transformar su entorno.</p>
+      </div>
+
+      <div class="ideario__grid">
+        <div class="valor-card reveal">
+          <div class="valor-card__number">01</div>
+          <h3 class="valor-card__title">Excelencia Académica</h3>
+          <p class="valor-card__desc">Estándares pedagógicos rigurosos que preparan a nuestros alumnos para los desafíos del siglo XXI, con un enfoque en el pensamiento crítico y la resolución de problemas.</p>
+        </div>
+        <div class="valor-card reveal reveal--delay-1">
+          <div class="valor-card__number">02</div>
+          <h3 class="valor-card__title">Formación en Valores</h3>
+          <p class="valor-card__desc">Respeto, solidaridad, responsabilidad y honestidad como pilares de la convivencia escolar y la construcción de ciudadanía.</p>
+        </div>
+        <div class="valor-card reveal reveal--delay-2">
+          <div class="valor-card__number">03</div>
+          <h3 class="valor-card__title">Innovación Pedagógica</h3>
+          <p class="valor-card__desc">Incorporamos metodologías activas, tecnología educativa y proyectos interdisciplinarios que hacen del aprendizaje una experiencia significativa.</p>
+        </div>
+        <div class="valor-card reveal reveal--delay-1">
+          <div class="valor-card__number">04</div>
+          <h3 class="valor-card__title">Comunidad Educativa</h3>
+          <p class="valor-card__desc">Familias, docentes y alumnos como protagonistas de un proyecto común, con espacios de diálogo y participación activa.</p>
+        </div>
+        <div class="valor-card reveal reveal--delay-2">
+          <div class="valor-card__number">05</div>
+          <h3 class="valor-card__title">Mirada Integral</h3>
+          <p class="valor-card__desc">Educación que atiende todas las dimensiones del desarrollo: intelectual, emocional, social, física y artística.</p>
+        </div>
+        <div class="valor-card reveal reveal--delay-3">
+          <div class="valor-card__number">06</div>
+          <h3 class="valor-card__title">Identidad Cultural</h3>
+          <p class="valor-card__desc">Arraigo en la cultura argentina y apertura al mundo a través del bilingüismo y el intercambio con otras instituciones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- ADMISIONES                                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="admisiones" id="admisiones">
+    <div class="container">
+      <div class="admisiones__layout">
+        <div class="admisiones__info reveal">
+          <span class="section-header__tag">Sumate a la Escuela Integral Jorge Luis Borges</span>
+          <h2 class="admisiones__title">Proceso de<br><em>Admisión 2027</em></h2>
+          <p class="admisiones__desc">Estamos recibiendo consultas para el ciclo lectivo 2027. Completá el formulario y nuestro equipo de Admisiones se pondrá en contacto con vos.</p>
+
+          <div class="admisiones__steps">
+            <div class="admision-step">
+              <div class="admision-step__number">1</div>
+              <div>
+                <h4>Consulta Inicial</h4>
+                <p>Completá el formulario con los datos de tu familia.</p>
+              </div>
+            </div>
+            <div class="admision-step">
+              <div class="admision-step__number">2</div>
+              <div>
+                <h4>Entrevista Familiar</h4>
+                <p>Coordinamos una reunión para conocernos mutuamente.</p>
+              </div>
+            </div>
+            <div class="admision-step">
+              <div class="admision-step__number">3</div>
+              <div>
+                <h4>Visita a la Escuela</h4>
+                <p>Recorré nuestras instalaciones y conocé al equipo docente.</p>
+              </div>
+            </div>
+            <div class="admision-step">
+              <div class="admision-step__number">4</div>
+              <div>
+                <h4>Confirmación</h4>
+                <p>Formalización de la inscripción y bienvenida a la comunidad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="admisiones__form reveal reveal--delay-1" id="admisionForm" action="https://api.web3forms.com/submit" method="POST">
+          <h3 class="admisiones__form-title">Solicitar Información</h3>
+
+          <!-- Access key de Web3Forms (reemplazar por el real) -->
+          <input type="hidden" name="access_key" value="9e6a068d-22c5-488e-b805-1417df2a9625">
+          <input type="hidden" name="subject" value="Nueva consulta de admisión - Sitio Web">
+          <input type="hidden" name="from_name" value="Sitio Web Borges">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label for="parentName">Nombre del padre/madre/tutor</label>
+            <input type="text" id="parentName" name="Nombre del tutor" required placeholder="Ej: María García">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="Email" required placeholder="correo@ejemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono</label>
+              <input type="tel" id="phone" name="Telefono" required placeholder="11 2345-6789">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="studentName">Nombre del alumno/a</label>
+              <input type="text" id="studentName" name="Nombre del alumno" required placeholder="Nombre y apellido">
+            </div>
+            <div class="form-group">
+              <label for="birthDate">Fecha de nacimiento</label>
+              <input type="date" id="birthDate" name="Fecha de nacimiento" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="nivel">Nivel de interés</label>
+            <select id="nivel" name="Nivel de interes" required>
+              <option value="" disabled selected>Seleccioná un nivel</option>
+              <option value="Nivel Inicial (2 a 5 años)">Nivel Inicial (2 a 5 años)</option>
+              <option value="Nivel Primario (6 a 12 años)">Nivel Primario (6 a 12 años)</option>
+              <option value="Nivel Secundario (13 a 18 años)">Nivel Secundario (13 a 18 años)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje (opcional)</label>
+            <textarea id="message" name="Mensaje" rows="3" placeholder="¿Querés contarnos algo más?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Enviar Consulta</button>
+          <p class="admisiones__form-note">Responderemos tu consulta en un plazo de 48 horas hábiles.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FOOTER                                      -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__top-pattern"></div>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="LOGO.png" alt="Escuela Integral Jorge Luis Borges" style="width:42px;height:42px;border-radius:50%;">
+            <span>
+              <strong>Jorge Luis Borges</strong><br>
+              <small>Escuela Integral</small>
+            </span>
+          </div>
+          <p class="footer__brand-desc">Formando personas íntegras desde 1996. Una comunidad educativa comprometida con la excelencia y los valores humanos.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Niveles</h4>
+          <ul>
+            <li><a href="#niveles">Nivel Inicial</a></li>
+            <li><a href="#niveles">Nivel Primario</a></li>
+            <li><a href="#niveles">Nivel Secundario</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="#ideario">Ideario y Valores</a></li>
+            <li><a href="#instalaciones">Instalaciones</a></li>
+            <li><a href="#admisiones">Admisiones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <ul>
+            <li>Vicente López 1786</li>
+            <li>San Miguel, Buenos Aires, Argentina</li>
+            <li><a href="tel:+541144517063">(011) 4451-7063</a></li>
+            <li><a href="mailto:info@escuelaborges.edu.ar">info@escuelaborges.edu.ar</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Escuela Integral Jorge Luis Borges. Todos los derechos reservados.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.94 2C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-2A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- MODALES                                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modalInicial">
+    <div class="modal">
+      <button class="modal__close" aria-label="Cerrar">&times;</button>
+      <div class="modal__header">
+        <span class="modal__tag">Nivel Inicial · 2 a 5 años</span>
+        <h2 class="modal__title">Talleres <em>extracurriculares</em></h2>
+        <p class="modal__desc">Actividades a contraturno para complementar la formación integral de los más pequeños.</p>
+      </div>
+      <div class="modal__grid">
+        <div class="modal__item">
+          <div class="modal__item-icon">🏀</div>
+          <h4>Básquet</h4>
+          <p>Coordinación, trabajo en equipo y diversión en la cancha.</p>
+        </div>
+        <div class="modal__item">
+          <div class="modal__item-icon">⚽</div>
+          <h4>Fútbol</h4>
+          <p>Desarrollo motriz, compañerismo y espíritu deportivo.</p>
+        </div>
+        <div class="modal__item">
+          <div class="modal__item-icon">🧘</div>
+          <h4>Yoga</h4>
+          <p>Relajación, concentración y conexión cuerpo-mente.</p>
+        </div>
+        <div class="modal__item">
+          <div class="modal__item-icon">🥋</div>
+          <h4>Taekwondo</h4>
+          <p>Disciplina, respeto y autoconfianza a través del arte marcial.</p>
+        </div>
+        <div class="modal__item">
+          <div class="modal__item-icon">🌎</div>
+          <h4>Inglés</h4>
+          <p>Inmersión lúdica en el idioma desde edades tempranas.</p>
+        </div>
+      </div>
+      <div class="modal__footer">
+        <a href="#admisiones" class="btn btn--primary modal__cta">Solicitar información</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

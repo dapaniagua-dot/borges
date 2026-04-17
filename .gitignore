@@ -1,0 +1,20 @@
+# Carpeta de build local (no necesaria en el repo)
+dist/
+
+# Archivos temporales / del IDE
+.vscode/
+.idea/
+*.log
+Thumbs.db
+.DS_Store
+
+# Favicons intermedios (solo se usan favicon.ico y apple-touch-icon.png)
+favicon-16.png
+favicon-32.png
+
+# Imagen del hero antigua (ya no se usa)
+hero.jpg
+
+# Archivos de Claude Code
+CLAUDE.MD
+.claude/

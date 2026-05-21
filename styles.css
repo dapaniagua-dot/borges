@@ -13,8 +13,8 @@
   --verde-deep:  #156b2c;
   --verde-light: #27a847;
   --verde-muted: #1a7532;
-  --cream:       #faf8f5;
-  --cream-dark:  #f0edea;
+  --cream:       #f1ebe0;
+  --cream-dark:  #e6dfd0;
   --warm-gray:   #6b6560;
   --text:        #2c2825;
   --text-light:  #7a7470;
@@ -338,7 +338,7 @@ em {
   justify-content: center;
   background: #1a1a1a;
   overflow: hidden;
-  padding: var(--space-3xl) var(--space-md) var(--space-xl);
+  padding: var(--space-3xl) var(--space-md) var(--space-md);
 }
 
 .hero__bg-pattern {
@@ -459,7 +459,7 @@ em {
    NIVELES EDUCATIVOS
    ═══════════════════════════════════════════════ */
 .niveles {
-  padding: var(--space-3xl) 0;
+  padding: var(--space-md) 0 var(--space-xl);
   background: var(--cream);
   position: relative;
   z-index: 1;
@@ -478,21 +478,25 @@ em {
   position: relative;
   overflow: hidden;
   transition: all 0.45s var(--ease-out);
-  border: 1px solid rgba(26, 39, 68, 0.06);
+  border: 1px solid rgba(26, 39, 68, 0.22);
+  box-shadow: 0 10px 32px rgba(26, 39, 68, 0.1);
 }
 
-.nivel-card::before {
+.nivel-card::before,
+.nivel-card::after {
   content: '';
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
   height: 4px;
   background: linear-gradient(90deg, var(--rojo), var(--verde));
-  transform: scaleX(0);
+  transform: scaleX(1);
   transform-origin: left;
   transition: transform 0.45s var(--ease-out);
 }
+
+.nivel-card::before { top: 0; }
+.nivel-card::after  { bottom: 0; }
 
 .nivel-card:hover {
   transform: translateY(-6px);
@@ -754,10 +758,26 @@ em {
    QUOTE SECTION
    ═══════════════════════════════════════════════ */
 .quote-section {
-  padding: var(--space-lg) 0;
+  padding: var(--space-md) 0;
   background: var(--cream-dark);
   position: relative;
   overflow: hidden;
+}
+
+.quote-section::before {
+  content: '\201C';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+  font-family: var(--font-display);
+  font-size: clamp(14rem, 28vw, 26rem);
+  line-height: 1;
+  color: var(--rojo);
+  opacity: 0.07;
+  font-weight: 700;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .quote-section__pattern {
@@ -773,6 +793,7 @@ em {
 .quote {
   text-align: center;
   position: relative;
+  z-index: 1;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -795,19 +816,22 @@ em {
 }
 
 .quote__author {
+  display: inline-block;
   font-family: var(--font-body);
   font-style: normal;
   font-size: 0.85rem;
   color: var(--text-light);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
+  padding-top: var(--space-sm);
+  border-top: 1px solid rgba(204, 34, 34, 0.25);
 }
 
 /* ═══════════════════════════════════════════════
    INSTALACIONES
    ═══════════════════════════════════════════════ */
 .instalaciones {
-  padding: var(--space-3xl) 0;
+  padding: var(--space-xl) 0;
   background: var(--white);
 }
 
@@ -929,7 +953,7 @@ em {
    IDEARIO Y VALORES
    ═══════════════════════════════════════════════ */
 .ideario {
-  padding: var(--space-3xl) 0;
+  padding: var(--space-xl) 0;
   background: linear-gradient(170deg, #1a1a1a 0%, #2d2d2d 100%);
   position: relative;
   overflow: hidden;
@@ -995,7 +1019,7 @@ em {
    ADMISIONES
    ═══════════════════════════════════════════════ */
 .admisiones {
-  padding: var(--space-3xl) 0;
+  padding: var(--space-xl) 0;
   background: var(--cream);
 }
 
@@ -1094,7 +1118,7 @@ em {
 .form-group textarea {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 1.5px solid rgba(26, 39, 68, 0.12);
+  border: 1.5px solid rgba(26, 39, 68, 0.28);
   border-radius: var(--radius);
   font-family: var(--font-body);
   font-size: 0.9rem;
@@ -1114,8 +1138,8 @@ em {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: var(--text-light);
-  opacity: 0.5;
+  color: var(--warm-gray);
+  opacity: 1;
 }
 
 .form-group select {

@@ -13,8 +13,8 @@
   --verde-deep:  #156b2c;
   --verde-light: #27a847;
   --verde-muted: #1a7532;
-  --cream:       #f1ebe0;
-  --cream-dark:  #e6dfd0;
+  --cream:       #faf8f5;
+  --cream-dark:  #f0edea;
   --warm-gray:   #6b6560;
   --text:        #2c2825;
   --text-light:  #7a7470;
@@ -764,22 +764,6 @@ em {
   overflow: hidden;
 }
 
-.quote-section::before {
-  content: '\201C';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -58%);
-  font-family: var(--font-display);
-  font-size: clamp(14rem, 28vw, 26rem);
-  line-height: 1;
-  color: var(--rojo);
-  opacity: 0.07;
-  font-weight: 700;
-  pointer-events: none;
-  z-index: 0;
-}
-
 .quote-section__pattern {
   position: absolute;
   inset: 0;
@@ -974,7 +958,7 @@ em {
 
 .ideario__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-md);
 }
 
@@ -983,6 +967,7 @@ em {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
+  text-align: center;
   transition: all 0.4s var(--ease-out);
 }
 
@@ -1012,7 +997,6 @@ em {
   color: rgba(255,255,255,0.55);
   font-size: 0.9rem;
   line-height: 1.75;
-  text-align: justify;
 }
 
 /* ═══════════════════════════════════════════════

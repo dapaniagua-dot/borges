@@ -145,13 +145,13 @@
             Bases sólidas en lengua, matemáticas y ciencias. Pensamiento lógico, formación en valores y hábitos de estudio para toda la vida.
           </p>
           <ul class="nivel-card__features">
-            <li>Doble escolaridad optativa</li>
-            <li>Programa bilingüe intensivo</li>
+            <li>Talleres a contraturno optativos</li>
+            <li>Jornada diaria de 5 hs</li>
             <li>Robótica y programación</li>
             <li>Deportes y vida al aire libre</li>
             <li>Proyecto de lectura Borges</li>
           </ul>
-          <a href="#admisiones" class="nivel-card__link">
+          <a href="#" class="nivel-card__link" data-modal="modalPrimaria">
             Conocé más sobre Primaria
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -177,13 +177,13 @@
             Preparación para la vida universitaria y profesional. Pensamiento crítico, orientación vocacional y formación ciudadana responsable.
           </p>
           <ul class="nivel-card__features">
-            <li>Ciencias Sociales y Humanidades</li>
-            <li>Exámenes internacionales</li>
-            <li>Modelo de Naciones Unidas</li>
-            <li>Viajes educativos e intercambio</li>
-            <li>Tutoría y orientación vocacional</li>
+            <li>Orientación en Ciencias Sociales — Economía y Administración</li>
+            <li>Salidas y viajes educativos</li>
+            <li>Competencias deportivas y culturales</li>
+            <li>Talleres de convivencia, proyectos de vida y participación</li>
+            <li>Acompañamiento a las trayectorias escolares</li>
           </ul>
-          <a href="#admisiones" class="nivel-card__link">
+          <a href="#" class="nivel-card__link" data-modal="modalSecundaria">
             Conocé más sobre Secundaria
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
               <path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -221,7 +221,8 @@
       <div class="instalaciones__grid">
         <div class="instalacion-card reveal" data-area="aulas">
           <div class="instalacion-card__image">
-            <div class="instalacion-card__placeholder">
+            <img src="aulas.jpg" alt="Aulas Modernas" class="instalacion-card__photo">
+            <div class="instalacion-card__overlay">
               <svg viewBox="0 0 100 100" fill="none">
                 <rect x="15" y="25" width="70" height="50" rx="3" stroke="currentColor" stroke-width="2"/>
                 <rect x="20" y="30" width="25" height="18" rx="2" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
@@ -240,7 +241,8 @@
 
         <div class="instalacion-card reveal reveal--delay-1" data-area="biblioteca">
           <div class="instalacion-card__image">
-            <div class="instalacion-card__placeholder">
+            <img src="biblio.jpg" alt="Biblioteca Borges" class="instalacion-card__photo">
+            <div class="instalacion-card__overlay">
               <svg viewBox="0 0 100 100" fill="none">
                 <rect x="20" y="25" width="8" height="50" rx="1" stroke="currentColor" stroke-width="1.5"/>
                 <rect x="30" y="20" width="8" height="55" rx="1" stroke="currentColor" stroke-width="1.5" opacity="0.8"/>
@@ -272,7 +274,7 @@
           </div>
           <div class="instalacion-card__info">
             <h3>Campo de Deportes</h3>
-            <p>Cancha de fútbol, básquet, vóley y atletismo. Natatorio climatizado y gimnasio cubierto.</p>
+            <p>Canchas de fútbol de césped sintético con iluminación de última generación.</p>
           </div>
         </div>
 
@@ -295,39 +297,42 @@
           </div>
         </div>
 
-        <div class="instalacion-card reveal reveal--delay-1" data-area="arte">
+        <div class="instalacion-card reveal reveal--delay-1" data-area="escenicos">
           <div class="instalacion-card__image">
-            <img src="tallerdearte.png" alt="Muestra artística - Taller de Arte" class="instalacion-card__photo">
+            <img src="tallerdearte.png" alt="Escenario con iluminación y sonido - Espacios Escénicos" class="instalacion-card__photo">
             <div class="instalacion-card__overlay">
               <svg viewBox="0 0 100 100" fill="none">
-                <circle cx="40" cy="40" r="15" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
-                <circle cx="55" cy="35" r="12" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
-                <circle cx="48" cy="55" r="13" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+                <path d="M20 78V40l30-15 30 15v38" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M30 78V52h40v26" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                <circle cx="50" cy="22" r="4" fill="currentColor" opacity="0.5"/>
+                <line x1="38" y1="40" x2="38" y2="30" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+                <line x1="62" y1="40" x2="62" y2="30" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
               </svg>
-              <span>Taller de Arte</span>
+              <span>Espacios Escénicos</span>
             </div>
           </div>
           <div class="instalacion-card__info">
-            <h3>Taller de Arte</h3>
-            <p>Espacio amplio y luminoso para expresión plástica, música, teatro y danza.</p>
+            <h3>Espacios Escénicos</h3>
+            <p>Escenarios equipados con iluminación y sonido profesional para teatro y actos escolares.</p>
           </div>
         </div>
 
-        <div class="instalacion-card reveal reveal--delay-2" data-area="patio">
+        <div class="instalacion-card reveal reveal--delay-2" data-area="gimnasio">
           <div class="instalacion-card__image">
-            <div class="instalacion-card__placeholder">
+            <img src="gimnasio.jpg" alt="Gimnasio Cubierto" class="instalacion-card__photo">
+            <div class="instalacion-card__overlay">
               <svg viewBox="0 0 100 100" fill="none">
-                <path d="M50 20c-12 0-20 10-20 22s20 33 20 33 20-21 20-33-8-22-20-22z" stroke="currentColor" stroke-width="2"/>
-                <circle cx="50" cy="40" r="8" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
-                <line x1="20" y1="80" x2="80" y2="80" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
-                <line x1="25" y1="85" x2="75" y2="85" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+                <path d="M18 78V46c0-13 14-23 32-23s32 10 32 23v32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="13" y1="78" x2="87" y2="78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="50" cy="56" r="10" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+                <path d="M40 56h20M50 46v20" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
               </svg>
-              <span>Espacios Verdes</span>
+              <span>Gimnasio Cubierto</span>
             </div>
           </div>
           <div class="instalacion-card__info">
-            <h3>Espacios Verdes</h3>
-            <p>Patios arbolados, huerta orgánica educativa y áreas de juego diseñadas por nivel.</p>
+            <h3>Gimnasio Cubierto</h3>
+            <p>Espacio techado para deportes y actividades todo el año, sin depender del clima.</p>
           </div>
         </div>
       </div>
@@ -564,34 +569,98 @@
       <button class="modal__close" aria-label="Cerrar">&times;</button>
       <div class="modal__header">
         <span class="modal__tag">Nivel Inicial · 2 a 5 años</span>
-        <h2 class="modal__title">Talleres <em>extracurriculares</em></h2>
-        <p class="modal__desc">Actividades a contraturno para complementar la formación integral de los más pequeños.</p>
+        <h2 class="modal__title">Talleres <em>por día</em></h2>
+        <p class="modal__desc">Una propuesta diferente para cada día de la semana, a contraturno.</p>
       </div>
       <div class="modal__grid">
         <div class="modal__item">
-          <div class="modal__item-icon">🏀</div>
-          <h4>Básquet</h4>
-          <p>Coordinación, trabajo en equipo y diversión en la cancha.</p>
+          <div class="modal__item-icon">📖</div>
+          <h4>Taller literario y creación de personajes</h4>
         </div>
         <div class="modal__item">
-          <div class="modal__item-icon">⚽</div>
-          <h4>Fútbol</h4>
-          <p>Desarrollo motriz, compañerismo y espíritu deportivo.</p>
+          <div class="modal__item-icon">🤸</div>
+          <h4>Taller de juego y movimiento</h4>
+        </div>
+        <div class="modal__item">
+          <div class="modal__item-icon">🔢</div>
+          <h4>Taller de juegos matemáticos</h4>
         </div>
         <div class="modal__item">
           <div class="modal__item-icon">🧘</div>
-          <h4>Yoga</h4>
-          <p>Relajación, concentración y conexión cuerpo-mente.</p>
+          <h4>Taller de emociones en movimiento, yoga y emociones</h4>
         </div>
         <div class="modal__item">
-          <div class="modal__item-icon">🥋</div>
-          <h4>Taekwondo</h4>
-          <p>Disciplina, respeto y autoconfianza a través del arte marcial.</p>
+          <div class="modal__item-icon">🎨</div>
+          <h4>Taller de arte</h4>
+        </div>
+      </div>
+      <div class="modal__footer">
+        <a href="#admisiones" class="btn btn--primary modal__cta">Solicitar información</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modalPrimaria">
+    <div class="modal">
+      <button class="modal__close" aria-label="Cerrar">&times;</button>
+      <div class="modal__header">
+        <span class="modal__tag">Nivel Primario · 6 a 12 años</span>
+        <h2 class="modal__title">Talleres <em>a contraturno</em></h2>
+        <p class="modal__desc">Actividades optativas para complementar la jornada y acompañar los intereses de cada alumno.</p>
+      </div>
+      <div class="modal__grid modal__grid--compact">
+        <div class="modal__item"><div class="modal__item-icon">🌎</div><h4>Inglés</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">🎭</div><h4>Teatro</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">✂️</div><h4>Taller creativo</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">⚽</div><h4>Fútbol masculino</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">⚽</div><h4>Fútbol femenino</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">🖌️</div><h4>Pintura</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">🥋</div><h4>Taekwondo</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">🧵</div><h4>Labores</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">🤾</div><h4>Handball</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">💃</div><h4>Danza</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">♟️</div><h4>Ajedrez</h4></div>
+        <div class="modal__item"><div class="modal__item-icon">🖼️</div><h4>Arte</h4></div>
+      </div>
+      <div class="modal__footer">
+        <a href="#admisiones" class="btn btn--primary modal__cta">Solicitar información</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modalSecundaria">
+    <div class="modal">
+      <button class="modal__close" aria-label="Cerrar">&times;</button>
+      <div class="modal__header">
+        <span class="modal__tag">Nivel Secundario · 13 a 18 años</span>
+        <h2 class="modal__title">Talleres <em>a contraturno</em></h2>
+        <p class="modal__desc">Actividades extracurriculares y propuesta institucional para acompañar la trayectoria de cada estudiante.</p>
+      </div>
+      <div class="modal__grid">
+        <div class="modal__item">
+          <div class="modal__item-icon">⚽</div>
+          <h4>Fútbol</h4>
+          <p>Trabajo en equipo, táctica y espíritu deportivo en cada partido.</p>
+        </div>
+        <div class="modal__item">
+          <div class="modal__item-icon">🏐</div>
+          <h4>Vóley</h4>
+          <p>Coordinación, comunicación y juego en equipo en la red.</p>
+        </div>
+        <div class="modal__item">
+          <div class="modal__item-icon">🤾</div>
+          <h4>Handball</h4>
+          <p>Velocidad, estrategia y compañerismo dentro de la cancha.</p>
+        </div>
+        <div class="modal__item">
+          <div class="modal__item-icon">🎭</div>
+          <h4>Teatro</h4>
+          <p>Expresión, confianza y creatividad sobre el escenario.</p>
         </div>
         <div class="modal__item">
           <div class="modal__item-icon">🌎</div>
-          <h4>Inglés</h4>
-          <p>Inmersión lúdica en el idioma desde edades tempranas.</p>
+          <h4>Escuela de Inglés</h4>
+          <p>Formación en inglés con certificación del Instituto Británico.</p>
         </div>
       </div>
       <div class="modal__footer">

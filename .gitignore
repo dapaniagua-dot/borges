@@ -18,3 +18,10 @@ hero.jpg
 # Archivos de Claude Code
 CLAUDE.MD
 .claude/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
